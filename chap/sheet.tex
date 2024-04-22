@@ -16,28 +16,6 @@
 % 导师评语
 
 \def\mentorcomment{\parbox[l]{35.88em}{
-  \qquad
-  哭过笑过恋过恨过，仿佛是一梦蹉跎。
-
-  \qquad
-  迷惑失落忧郁寂寞，谁都是凡人一个。
-
-  \qquad
-  细水还来不及长流，抽刀已经断不了情愁。
-
-  \qquad
-  牵手还是放手，不如一歌。
-
-  \qquad
-  在遗忘中不舍，醉醒交错，
-
-  \qquad
-  青春大概如你所说。
-  
-  \qquad
-  在花落时结果，期望很多，青春大概都这样过。
-
-  \qquad
 
   \qquad 评语部分会自动换行。两个连续的空行代表一个新的段落，以上《青春大概》歌词的分段就是这样完成的。
   导师签名部分相对于评语正文的结束位置的竖直距离是固定的，因此请控制导师评语的长度，使其能容纳在本页内。
@@ -66,14 +44,15 @@
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|m{4em}m{4em}m{5em}m{6em}m{6em}l|}
+\begin{tabular}{|m{2em}m{5em}m{4em}m{8em}m{6em}l|}
 \hline
-\multicolumn{1}{|l|}{学生姓名}                  & \multicolumn{1}{m{4em}|}{\authorsname}                  & \multicolumn{1}{l|}{学生学号}                  & \multicolumn{1}{m{6em}|}{\mystudentid}                  & \multicolumn{1}{l|}{论文成绩}                  &       \myscore                  \\ \hline
-\multicolumn{1}{|l|}{学院(系)}                  & \multicolumn{3}{l|}{\myschool}                                                                                                    & \multicolumn{1}{l|}{学生所在专业}                  &    \mycmajor                                    \\ \hline
-\multicolumn{1}{|l|}{\multirow{2}{*}{导师姓名}} & \multicolumn{1}{l|}{\multirow{2}{4em}{\mycmentornotitle}} & \multicolumn{1}{l|}{\multirow{2}{5em}{导师单位/ 所在研究所}} & \multicolumn{1}{l|}{\multirow[]{2}{6em}{\mymentorinstitute}} & \multicolumn{1}{l|}{\multirow{2}{*}{导师职称}} & \multirow{2}{*}{\mycmentortitle}                      \\
-\multicolumn{1}{|l|}{}                  & \multicolumn{1}{l|}{}                  & \multicolumn{1}{l|}{}                  & \multicolumn{1}{l|}{}                  & \multicolumn{1}{l|}{}                  &                                        \\ \hline
-\multicolumn{2}{|c|}{\multirow{2}{*}{\shortstack{论文题目\\[0.35em](中、英文)}}} & \multicolumn{4}{c|}{\multirow{2}{*}{\shortstack{\myctitle\\[0.35em]\myetitle}}}  \\
-\multicolumn{2}{|c|}{}                  & \multicolumn{4}{c|}{} \\ \hline
+\multicolumn{1}{|c|}{学生姓名} & \multicolumn{1}{m{5em}|}{\authorsname}  & \multicolumn{1}{c|}{本科院系} & \multicolumn{1}{m{8em}|}{\myschool} & \multicolumn{1}{c|}{论文成绩} & \myscore \\ \cline{1-4}
+\multicolumn{1}{|c|}{学生学号} & \multicolumn{1}{m{5em}|}{\mystudentid} & \multicolumn{1}{c|}{本科专业} & \multicolumn{1}{m{8em}|}{\mycmajor} & \multicolumn{1}{c|}{（等级制）} & \\ \hline
+\multicolumn{1}{|c|}{\multirow{2}{*}{导师姓名}} & \multicolumn{1}{l|}{\multirow{2}{4em}{\mycmentornotitle}} & \multicolumn{1}{c|}{\multirow{2}{5em}{导师单位/ 所在学院}} & \multicolumn{1}{l|}{\multirow[]{2}{6em}{\mymentorinstitute}} & \multicolumn{1}{l|}{\multirow{2}{*}{导师职称}} & \multirow{2}{*}{\mycmentortitle}                      \\
+\multicolumn{1}{|c|}{}                  & \multicolumn{1}{l|}{}                  & \multicolumn{1}{l|}{}                  & \multicolumn{1}{l|}{}                  & \multicolumn{1}{l|}{}                  &                                        \\ \hline
+% \multicolumn{2}{|c|}{\multirow{2}{*}{\shortstack{论文题目\\[0.35em](中、英文)}}} & \multicolumn{4}{c|}{\multirow{2}{*}{\shortstack{\myctitle\\[0.35em]\myetitle}}}  \\
+\multicolumn{1}{|c|}{\multirow{2}{*}{论文题目}} & \multicolumn{1}{c|}{中文} & \multicolumn{4}{c|}{\myctitle} \\ \cline{2-6}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{英文} & \multicolumn{4}{c|}{\myetitle} \\ \hline
 \multicolumn{6}{|m{36.88em}|}{\center{导师评语}} \\
 \multicolumn{6}{|m{36.88em}|}{\centering\kaishu{(包含对论文的性质、难度、分量、综合训练等是否符合培养目标的目的等评价)}} \\
 \multicolumn{6}{|m{36.88em}|}{} \\

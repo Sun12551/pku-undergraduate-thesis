@@ -43,19 +43,19 @@
 	cthesisname = {本科生毕业论文}, ethesisname = {Thesis},
 	thesiscover = {本科生毕业论文},
 	% 长标题不用手动换行。如需强制换行，可用 \thssnl，不能用“\\”（双盲版会出错）。
-	ctitle = {这样长的标题今后再也不会写了，即使能自动换行},
-	etitle = {Most Titles Take Up Two Rows Including This One},
+	ctitle = {RustOS中的文件系统的设计与实现},
+	etitle = {Design and Implementation of File System in RustOS},
 	% Use ~ to add non-breaking space
-	cauthor = {赵钱孙李}, eauthor = {Test}, date = {二〇二二~年~六~月},
-	studentid = {01234567890}, school = {某某学院},
-	cmajor = {某某某专业与技术}, emajor = {Some Major},
+	cauthor = {孙绍聪}, eauthor = {Sun Shaocong}, date = {二〇二二~年~六~月},
+	studentid = {2000012977}, school = {信息科学技术学院},
+	cmajor = {信息与计算科学}, emajor = {Some Major},
 	% direction = {某某方向}, % 本科毕业无需填方向
-	cmentor = {某某教授}, ementor = {Prof.\ Somebody}, % 用于填写封面（可带教职）
-  cmentornotitle = {导师}, % 导师的姓名，用于填写评阅表
-  cmentortitle = {教职}, % 导师的教职，用于填写评阅表
-  cmentorinstitute = {很长的研究机构会自动换行}, % 无需手动换行，控制字数<=12即可。如果字数>12，将会溢出表格
-	ckeywords = {其一，其二}, % 中文摘要关键词
-	ekeywords = {First, Second}, % 英文摘要关键词
+	cmentor = {张杰}, ementor = {Prof.\ Somebody}, % 用于填写封面（可带教职）
+  cmentornotitle = {张杰}, % 导师的姓名，用于填写评阅表
+  cmentortitle = {助理教授}, % 导师的教职，用于填写评阅表
+  cmentorinstitute = {计算机学院}, % 无需手动换行，控制字数<=12即可。如果字数>12，将会溢出表格
+	ckeywords = {Rust，操作系统，文件系统，exFAT，页缓存，数据预取}, % 中文摘要关键词
+	ekeywords = {Rust, Operating System, File System, exFAT, Page Cache，Readahead}, % 英文摘要关键词
 	% 以下两项无双盲评审需求的用户可保持原状。
 	% 注意 discipline/major 分别指一/二级学科。
 	% blindid = {9876543210}, discipline = {某某学科}
@@ -118,6 +118,9 @@
 	\include{chap/chap1}
 	\include{chap/chap2}
 	\include{chap/chap3}
+	\include{chap/chap4}
+	\include{chap/chap5}
+	\include{chap/chap6}
 
 	% 正文中的附录部分。
 	\appendix
