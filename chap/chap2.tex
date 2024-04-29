@@ -10,9 +10,16 @@ exFAT 主要解决了FAT32在处理大文件和大容量存储设备上的限制
 exFAT 文件系统使用64位来描述文件大小，从而支持依赖于非常大的文件的应用程序；
 exFAT 文件系统还允许最大32MB的簇，有效地支持了非常大的存储设备。
 
-exFAT文件系统在存储设备上的分区可以划分为三个主要部分：启动区、FAT区和数据区，如图？？所示。
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.0\textwidth]{chap2_exfat_overview.jpg}
+    \caption{exFAT文件系统分区}
+    \label{fig:exfat_overview}
+\end{figure}
+
+exFAT文件系统在存储设备上的分区可以划分为三个主要部分：启动区、FAT区和数据区，如图\ref{fig:exfat_overview}所示。
 启动区包含超级块和后备超级块。
-超级块（Superblock）中包含文件系统的基本信息，如扇区和簇的大小、FAT区和数据区的位置，、根目录所在簇等。
+超级块（Superblock）中包含文件系统的基本信息，如扇区和簇的大小、FAT区和数据区的位置、根目录所在簇等。
 超级块一般位于存储设备上 exFAT 分区的起始位置，会在exFAT打开时被读取。
 利用超级块中的信息，操作系统可以读取文件分配表并初始化根目录。
 超级块对 exFAT 文件系统非常重要，因此还会安排一个后备超级块（Backup Superblock），以应对超级块损坏的情况。
