@@ -1,46 +1,262 @@
-@article{Asterinas,
-  author          = {https://github.com/asterinas/asterinas},
-  journal         = {},
-  number          = {},
-  title           = {},
-  volume          = {},
-  year            = {}
+@misc{Asterinas,
+  title={Asterinas},
+  url={https://github.com/asterinas/asterinas},
 }
 
-@article{exFAT,
-  author          = {https://learn.microsoft.com/en-us/windows/win32/fileio/exfat-specification},
-  journal         = {},
-  number          = {},
-  title           = {},
-  volume          = {},
-  year            = {}
+@online{exFAT,
+  title={exFAT File System Specification},
+  organization={Microsoft Corporation},
+  url={https://docs.microsoft.com/en-us/windows/win32/fileio/exfat-specification},
+  note={[Accessed: 15th May 2024]}
 }
+
+@online{exFAT1,
+  title={exFAT Wiki},
+  organization={Linux exFAT Project},
+  url={https://github.com/relan/exfat/wiki},
+  note={[Accessed: 15th May 2024]}
+}
+
+@inproceedings{exFAT2,
+  title={A high-performance exFAT file system for NAND flash memory},
+  author={Park, Jongmoo and others},
+  booktitle={Proceedings of the 7th ACM international conference on Computing frontiers},
+  year={2010}
+}
+
+@article{anderson2016fat,
+  title={FAT File System: A Detailed Understanding},
+  author={Anderson, R. and Mullins, R. and Wait, D.},
+  journal={International Journal of Computer Applications},
+  volume={154},
+  number={10},
+  pages={1--5},
+  year={2016}
+}
+
+@article{al-turany2019understanding,
+  title={Understanding the Directory Structure of exFAT File System},
+  author={Al-Turany, M. A.},
+  journal={International Journal of Computer Science and Information Security},
+  volume={17},
+  number={1},
+  pages={123--128},
+  year={2019}
+}
+
+@article{wang2020research,
+  title={Research on Directory Structure of exFAT File System},
+  author={Wang, C. and Liu, Y. and Zhang, X.},
+  journal={Journal of Physics: Conference Series},
+  volume={1296},
+  number={2},
+  year={2020}
+}
+
 
 @article{readahead,
-  author          = {Fengguang Wu},
-  journal         = {},
-  number          = {},
-  title           = {Linux readahead: less tricks for more},
-  volume          = {},
-  year            = {}
+  title = {Linux readahead: less tricks for more},
+  author = {Wu, Fengguang and Xi, Hongsheng and Li, Jun and Zou, Nanhai},
+  journal = {Linux Symposium},
 }
 
-@article{test-en,
-	author = {Author},
-	title = {Title},
-	type = {J},
-	journal = {Journal},
-	date = {2014-04-01},
-	language = {english},
+
+@book{tanenbaum2014modern,
+  title={Modern Operating Systems},
+  author={Tanenbaum, A. S. and Bos, H.},
+  edition={4th edition},
+  publisher={Pearson},
+  year={2014}
 }
 
-@article{test-zh,
-	author = {作者},
-	title = {标题},
-	type = {J},
-	journal = {期刊},
-	date = {2014-04-01},
-	language = {chinese},
+@book{ostep,
+  author = {Arpaci-Dusseau, Remzi H. and Arpaci-Dusseau, Andrea C.},
+  title = {Operating Systems: Three Easy Pieces},
+  publisher = {Arpaci-Dusseau Books},
+  edition = {3rd edition},
+  year={2018}
+}
+
+
+@book{bovet2005understanding,
+  title={Understanding the Linux Kernel},
+  author={Bovet, D. P. and Cesati, M.},
+  edition={3rd edition},
+  publisher={O'Reilly Media},
+  year={2005}
+}
+
+
+@article{matsakis2014rust,
+  title={The rust language},
+  author={Matsakis, Nicholas D and Klock, Felix S},
+  journal={ACM SIGAda Ada Letters},
+  year={2014},
+  publisher={ACM New York, NY, USA}
+}
+
+@article{sequential_prefetching,
+  author = {A. J. Smith and J. E. Smith},
+  title = {Evaluating Stream Buffers as a Secondary Cache Replacement},
+  journal = {Proceedings of the 27th Annual International Symposium on Computer Architecture},
+  year = {2000},
+  pages = {24-33},
+}
+
+@article{disk_performance,
+  author = {David A. Patterson and Garth Gibson and Randy H. Katz},
+  title = {A Case for Redundant Arrays of Inexpensive Disks (RAID)},
+  journal = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  year = {1988},
+  pages = {109-116}
+}
+
+@article{disk_io_behavior,
+  author = {Peter M. Chen and David A. Patterson and Randy H. Katz},
+  title = {Introduction to Redundant Arrays of Inexpensive Disks (RAID)},
+  journal = {Proceedings of the International Workshop on Management of Replicated Data},
+  year = {1989},
+  pages = {1-11}
+}
+
+
+@article{rust_owner1,
+author = {Crichton, Will and Gray, Gavin and Krishnamurthi, Shriram},
+title = {A Grounded Conceptual Model for Ownership Types in Rust},
+year = {2023},
+issue_date = {October 2023},
+publisher = {Association for Computing Machinery},
+}
+
+@misc{rust_owner,
+  url          = {https://doc.rust-lang.org/stable/book/ch04-00-understanding-ownership.html},
+  author       = {The Rust Programming Language},
+  howpublished = {Official Rust Documentation},
+  title        = {The Rust Programming Language - Understanding Ownership},
+}
+
+@misc{rust_ref,
+  url          = {https://doc.rust-lang.org/stable/book/ch04-02-references-and-borrowing.html},
+  author       = {The Rust Programming Language},
+  howpublished = {Official Rust Documentation},
+  title        = {The Rust Programming Language - References and Borrowing},
+}
+
+@misc{rust_lifetime,
+  url          = {https://doc.rust-lang.org/stable/book/ch10-03-lifetime-syntax.html},
+  author       = {The Rust Programming Language},
+  howpublished = {Official Rust Documentation},
+  title        = {The Rust Programming Language - Lifetime Syntax},
+}
+
+@misc{rust_match,
+  url          = {https://doc.rust-lang.org/stable/book/ch06-02-match.html},
+  author       = {The Rust Programming Language},
+  howpublished = {Official Rust Documentation},
+  title        = {The Rust Programming Language - Match},
+}
+
+@misc{rust_enum,
+  url          = {https://doc.rust-lang.org/stable/book/ch06-01-defining-an-enum.html},
+  author       = {The Rust Programming Language},
+  howpublished = {Official Rust Documentation},
+  title        = {The Rust Programming Language - Defining an Enum},
+}
+
+@misc{rust_trait,
+  url          = {https://doc.rust-lang.org/stable/book/ch10-02-traits.html},
+  author       = {The Rust Programming Language},
+  howpublished = {Official Rust Documentation},
+  title        = {The Rust Programming Language - Traits},
+}
+
+@article{rust_lifetime1,
+  title={Visualization of lifetime constraints in Rust},
+  author={Dominik, Dietler},
+  journal={Bachelor. Thesis},
+  year={2018},
+  publisher={ETH Zrich}
+}
+
+@inproceedings{balasubramanian2017system,
+  title={System programming in rust: Beyond safety},
+  author={Balasubramanian, Abhiram and Baranowski, Marek S and Burtsev, Anton and Panda, Aurojit and Rakamari{\'c}, Zvonimir and Ryzhyk, Leonid},
+  booktitle={Proceedings of the 16th workshop on hot topics in operating systems},
+  pages={156--161},
+  year={2017}
+}
+
+@phdthesis{borgsmuller2021rust,
+  title={The Rust programming language for embedded software development},
+  author={Borgsm{\"u}ller, Nico},
+  year={2021},
+  school={Technische Hochschule Ingolstadt}
+}
+
+@book{chanda2018network,
+  title={Network Programming with Rust: Build fast and resilient network servers and clients by leveraging Rust's memory-safety and concurrency features},
+  author={Chanda, Abhishek},
+  year={2018},
+  publisher={Packt Publishing Ltd}
+}
+
+@inproceedings{rusch2019themis,
+  title={Themis: An efficient and memory-safe bft framework in rust: Research statement},
+  author={R{\"u}sch, Signe and Bleeke, Kai and Kapitza, R{\"u}diger},
+  booktitle={Proceedings of the 3rd Workshop on Scalable and Resilient Infrastructures for Distributed Ledgers},
+  pages={9--10},
+  year={2019}
+}
+
+@book{russinovich2009windows,
+  title={Windows Internals, Part 2 (6th Edition)},
+  author={Russinovich, Mark and Solomon, David and Ionescu, Alex},
+  year={2009},
+  publisher={Microsoft Press}
+}
+
+@inproceedings{qemu,
+    author = {Bellard, Fabrice},
+    title = {QEMU, a fast and portable dynamic translator},
+    booktitle = {Proceedings of the USENIX Annual Technical Conference},
+    year = {2005}
+}
+
+@inproceedings{fio, 
+    author = {Axboe, Jens}, 
+    title = {FIO: Flexible I/O tester}, 
+    booktitle = {Proceedings of the Linux Symposium}, 
+    year = {2011} 
+}
+
+@inproceedings{fuse,
+    author = {Szeredi, Miklos},
+    title = {FUSE - Filesystem in Userspace},
+    booktitle = {Proceedings of the Ottawa Linux Symposium},
+    year = {2005}
+}
+
+@inproceedings{laudon1997data,
+    title={The Data Prefetching Problem},
+    author={Laudon, James and Lenoski, Daniel},
+    booktitle={Proceedings of the 24th Annual International Symposium on Computer Architecture},
+    year={1997}
+}
+
+
+@article{SOOMRO2016215,
+title = {Information security management needs more holistic approach: A literature review},
+journal = {International Journal of Information Management},
+volume = {36},
+number = {2},
+pages = {215-225},
+year = {2016},
+issn = {0268-4012},
+doi = {https://doi.org/10.1016/j.ijinfomgt.2015.11.009},
+url = {https://www.sciencedirect.com/science/article/pii/S0268401215001103},
+author = {Zahoor Ahmed Soomro and Mahmood Hussain Shah and Javed Ahmed},
+keywords = {Information security, Management, Information security policy, Managerial practices, Business information architecture, Business IT alignment, Cloud computing, Systematic, Information architecture},
+abstract = {Information technology has dramatically increased online business opportunities; however these opportunities have also created serious risks in relation to information security. Previously, information security issues were studied in a technological context, but growing security needs have extended researchers' attention to explore the management role in information security management. Various studies have explored different management roles and activities, but none has given a comprehensive picture of these roles and activities to manage information security effectively. So it is necessary to accumulate knowledge about various managerial roles and activities from literature to enable managers to adopt these for a more holistic approach to information security management. In this paper, using a systematic literature review approach, we synthesised literature related to management's roles in information security to explore specific managerial activities to enhance information security management. We found that numerous activities of management, particularly development and execution of information security policy, awareness, compliance training, development of effective enterprise information architecture, IT infrastructure management, business and IT alignment and human resources management, had a significant impact on the quality of management of information security. Thus, this research makes a novel contribution by arguing that a more holistic approach to information security is needed and we suggest the ways in which managers can play an effective role in information security. This research also opens up many new avenues for further research in this area.}
 }
 
 % vim:ts=4:sw=4

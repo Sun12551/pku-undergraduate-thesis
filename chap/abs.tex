@@ -3,11 +3,44 @@
 
 \begin{cabstract}
 	%\pkuthssffaq % 中文测试文字
-	摘要。
+	在当今数字化时代，信息安全至关重要，而操作系统的安全性又是其中的代表。
+	Rust 语言恰以其独特的所有权系统和内存安全等特性著称，为操作系统开发带来了新的可能性，
+	能够有效地防范诸如空指针解引用、缓冲区溢出等常见的安全漏洞。
+	中关村实验室推出了新型操作系统 Asterinas，其采用 Rust 语言开发，旨在为用户提供更加安全可靠的操作系统环境。
+	
+	在这一背景下，本研究着眼于 Asterinas 操作系统的文件系统部分，旨在进一步完善其功能。
+	我们为 Asterinas 引入 exFAT 文件系统的支持，并对文件系统的页缓存模块增加了数据预取机制。
+	此外，我们为新增的 exFAT 文件系统设计了单元测试并运行了集成测试以验证实现的正确性。
+	随后，我们针对新增的 exFAT 文件系统和页缓存的数据预取机制，使用 FIO 进行了性能测试，并与 Linux 中的实现进行了比较。
+	测试结果表明，使用页缓存时，我们的实现在顺序读写模式上仍然与 Linux 中实现有一定的差距。
+	不使用页缓存时，Asterinas 直接与块设备交互的性能要弱于 Linux。
+	这个结果说明，页缓存的设计仍有改进的空间，对块设备实现的性能还有待提高，这也将是我们后续继续改进的方向。
+	
+	
 \end{cabstract}
 
 \ifblind\begin{beabstract}\else\begin{eabstract}\fi
-	Test of the English abstract.
+	In today's digital age, ensuring information security is crucial.
+	And operating system security plays an important role in information security. 
+	Rust language is renowned for its unique ownership system and memory safety features, 
+	offering new possibilities in operating system development by effectively preventing 
+	common security vulnerabilities such as null pointer dereferencing and buffer overflows. 
+	The emergence of the new Asterinas operating system from the Zhongguancun Laboratory, 
+	which is developed using Rust language, aims to provide users with a more secure and 
+	reliable operating system environment.
+	
+	This study focuses on enhancing the implementation of file system component of the Asterinas operating system. 
+	We have introduced support for the exFAT file system in Asterinas and 
+	added a data prefetching mechanism to the file system's page cache module. 
+	Furthermore, we designed unit tests for the newly added exFAT file system and 
+	conducted integration tests to verify the correctness of the implementation.	
+	Subsequently, we conducted performance tests using FIO on the newly added exFAT file system 
+	and page cache data prefetching mechanism, comparing the results with implementations in Linux.
+	The test results indicate that when using the page cache, 
+	our implementation still shows some gap compared to Linux in sequential IO mode.
+	When not using page caching, Asterinas' performance in directly interacting with block devices is weaker than Linux.
+	These results suggest that there is room for improvement in the design of page cache and block device, 
+	which will be the focus of future improvements.
 \ifblind\end{beabstract}\else\end{eabstract}\fi
 
 % vim:ts=4:sw=4

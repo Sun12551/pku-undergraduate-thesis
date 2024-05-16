@@ -6,7 +6,7 @@
 \section{数据预取的设计}\label{sec:ra_design}
 我们的数据预取的设计主要参考了 Linux 系统中的实现\parencite{readahead}。
 做数据预取的目的是将磁盘 IO 的延迟对应用程序隐藏，达到应用程序的处理和磁盘 IO 并行的效果。
-双窗口 （Dual Windows） 是一种常见的实现手段，可以达成流水线化的数据预取。
+双窗口（Dual Windows）\parencite{laudon1997data}是一种常见的实现手段，可以达成流水线化的数据预取。
 如图\ref{fig:readahead}所示，当应用程序在处理当前窗口 （current\_window） 中的数据时，
 数据预取在预读窗口 （ahead\_window） 以后台的方式进行。
 为了使这种应用程序和磁盘IO并行处理的状态能够延续，我们在 current\_window 中的某个页面上做标记 （lookahead\_index）。
@@ -16,7 +16,7 @@
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=1.0\textwidth]{chap4_readahead.jpg}
+    \includegraphics[width=1.0\textwidth]{chap4_readahead.pdf}
     \caption{数据预取行为示意}
     \label{fig:readahead}
 \end{figure}
@@ -67,10 +67,10 @@
 后两种状态统称为已初始化状态。
 页缓存的数据预取属于异步读取，对于异步读取的处理方式一般是，先向存储设备提交读请求并将相关页面
 的状态设置为 Uninit，待先前提交的请求完成时，将相关页面的状态更新为 Sync。
-另外，为了避免向底层设备提交过多的请求，我们限制最多存在一个未完成的数据预取请求。
+另外，为了避免向底层设备提交过多的请求，我们限制对于每个文件最多存在一个未完成的数据预取请求。
 
-当上层向页缓存请求编号为 $ idx $ 的页面时，会调用 $ commit\_page(idx) $。
-此时页缓存会首先查看先前提交的预取请求是否完成，如果请求完成，则更新相关页面的状态。
+当上层向页缓存请求编号为 $ idx $ 的页面时，上层会调用接口  $ commit\_page(idx) $。
+此时若存在未完成的预取请求，页缓存会首先查看先前提交的预取请求是否完成，如果请求完成，则更新相关页面的状态。
 随后，页缓存处理当前访问编号为 $ idx $ 的页面的请求，这可能如下有三种情况。
 \begin{itemize}
     \item 情况一：上层请求的页面在页缓存中，并处于已初始化状态。此时请求的页面已经可以返回，

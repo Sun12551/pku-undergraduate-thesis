@@ -32,6 +32,8 @@
 \usepackage{tabularx}
 \usepackage{tabulary}
 \usepackage{amsmath}
+\usepackage[ruled,vlined]{algorithm2e}
+
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
 %\newcolumntype{Z}{>{\centering\arraybackslash}m{0.2\textwidth}}
 
@@ -50,10 +52,10 @@
 	cthesisname = {本科生毕业论文}, ethesisname = {Thesis},
 	thesiscover = {本科生毕业论文},
 	% 长标题不用手动换行。如需强制换行，可用 \thssnl，不能用“\\”（双盲版会出错）。
-	ctitle = {RustOS中的文件系统的设计与实现},
-	etitle = {Design and Implementation of File System in RustOS},
+	ctitle = {Asterinas 中的安全文件系统的设计与实现},
+	etitle = {Design and Implementation of a Secure File System in Asterinas},
 	% Use ~ to add non-breaking space
-	cauthor = {孙绍聪}, eauthor = {Sun Shaocong}, date = {二〇二二~年~六~月},
+	cauthor = {孙绍聪}, eauthor = {Sun Shaocong}, date = {二〇二四~年~五~月},
 	studentid = {2000012977}, school = {信息科学技术学院},
 	cmajor = {信息与计算科学}, emajor = {Some Major},
 	% direction = {某某方向}, % 本科毕业无需填方向
@@ -128,6 +130,7 @@
 	\include{chap/chap4}
 	\include{chap/chap5}
 	\include{chap/chap6}
+	\include{chap/chap7}
 
 	% 正文中的附录部分。
 	\appendix
@@ -135,7 +138,7 @@
 	% 如果同时要使参考文献列表参与章节编号，可将“bibintoc”改为“bibnumbered”。
 	\printbibliography[heading = bibintoc]
 	% 各附录。
-	\include{chap/encl1}
+	%\include{chap/encl1}
 
 	% 以下为正文之后的部分，默认不进行章节编号。
 	\backmatter

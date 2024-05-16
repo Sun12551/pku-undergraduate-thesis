@@ -405,7 +405,7 @@
 			\titlelabel
 			{
 				\thss@int@fillinblank
-					{4} % 标题行数
+					{5} % 标题行数
 					{0.64\textwidth}
 					{
 						{\zihao{1}\bfseries\heiti\@ctitle}%中文标题，黑体一号加粗
