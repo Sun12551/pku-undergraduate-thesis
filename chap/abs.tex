@@ -3,10 +3,12 @@
 
 \begin{cabstract}
 	%\pkuthssffaq % 中文测试文字
-	在当今数字化时代，信息安全至关重要，而操作系统的安全性又是其中的代表。
-	Rust 语言恰以其独特的所有权系统和内存安全等特性著称，为操作系统开发带来了新的可能性，
-	能够有效地防范诸如空指针解引用、缓冲区溢出等常见的安全漏洞。
-	中关村实验室推出了新型操作系统 Asterinas，其采用 Rust 语言开发，旨在为用户提供更加安全可靠的操作系统环境。
+	在当今数字化时代，信息安全的重要性日益凸显，而操作系统的安全性则成为保障用户数据和系统稳定的关键。
+	在这样的背景下，Rust 语言以其独特的所有权系统、内存安全等特性而闻名，为操作系统开发带来了新的可能性，
+	有效地防范诸如空指针解引用、缓冲区溢出等常见的安全漏洞。
+	近期，中关村实验室推出了一款全新的操作系统——Asterinas。
+	与传统操作系统不同的是，Asterinas 采用 Rust 语言进行开发，旨在为用户提供更加安全可靠的操作系统环境。
+	这一举措体现了对信息安全的高度重视，同时也展示了 Rust 在操作系统开发领域的巨大潜力。
 	
 	在这一背景下，本研究着眼于 Asterinas 操作系统的文件系统部分，旨在进一步完善其功能。
 	我们为 Asterinas 引入 exFAT 文件系统的支持，并对文件系统的页缓存模块增加了数据预取机制。
@@ -16,18 +18,18 @@
 	不使用页缓存时，Asterinas 直接与块设备交互的性能要弱于 Linux。
 	这个结果说明，页缓存的设计仍有改进的空间，对块设备实现的性能还有待提高，这也将是我们后续继续改进的方向。
 	
-	
+
 \end{cabstract}
 
 \ifblind\begin{beabstract}\else\begin{eabstract}\fi
-	In today's digital age, ensuring information security is crucial.
-	And operating system security plays an important role in information security. 
-	Rust language is renowned for its unique ownership system and memory safety features, 
-	offering new possibilities in operating system development by effectively preventing 
-	common security vulnerabilities such as null pointer dereferencing and buffer overflows. 
-	The emergence of the new Asterinas operating system from the Zhongguancun Laboratory, 
-	which is developed using Rust language, aims to provide users with a more secure and 
-	reliable operating system environment.
+	In today's digital age, the importance of information security is increasingly prominent, 
+	with the security of operating systems being a key factor in safeguarding user data and system stability. 
+	In this context, Rust language is renowned for its unique ownership system, memory safety, 
+	and other features, bringing new possibilities to operating system development and effectively preventing common security vulnerabilities such as null pointer dereferencing and buffer overflows.
+	Recently, the Zhongguancun Laboratory has introduced a new operating system called Asterinas. 
+	Setting it apart from traditional operating systems, Asterinas is developed using the Rust language, 
+	aiming to provide users with a more secure and reliable operating system environment. 
+	This initiative demonstrates a high level of emphasis on information security while showcasing the significant potential of Rust in the field of operating system development.
 	
 	This study focuses on enhancing the implementation of file system component of the Asterinas operating system. 
 	We have introduced support for the exFAT file system in Asterinas and 

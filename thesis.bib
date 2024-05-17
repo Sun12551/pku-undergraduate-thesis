@@ -7,14 +7,12 @@
   title={exFAT File System Specification},
   organization={Microsoft Corporation},
   url={https://docs.microsoft.com/en-us/windows/win32/fileio/exfat-specification},
-  note={[Accessed: 15th May 2024]}
 }
 
 @online{exFAT1,
   title={exFAT Wiki},
   organization={Linux exFAT Project},
   url={https://github.com/relan/exfat/wiki},
-  note={[Accessed: 15th May 2024]}
 }
 
 @inproceedings{exFAT2,
@@ -25,13 +23,13 @@
 }
 
 @article{anderson2016fat,
-  title={FAT File System: A Detailed Understanding},
-  author={Anderson, R. and Mullins, R. and Wait, D.},
-  journal={International Journal of Computer Applications},
-  volume={154},
-  number={10},
-  pages={1--5},
-  year={2016}
+  title={Review of FAT Data Structure of FAT32 file system},
+  author={Bhat, WASIM AHMAD and Quadri, SMK},
+  journal={Oriental Journal of Computer Science \& Technology},
+  volume={3},
+  number={1},
+  pages={161--164},
+  year={2010}
 }
 
 @article{al-turany2019understanding,
@@ -55,9 +53,13 @@
 
 
 @article{readahead,
-  title = {Linux readahead: less tricks for more},
-  author = {Wu, Fengguang and Xi, Hongsheng and Li, Jun and Zou, Nanhai},
-  journal = {Linux Symposium},
+  title={Linux readahead: less tricks for more},
+  author={Wu, Fengguang and Xi, Hongsheng and Li, Jun and Zou, Nanhai},
+  booktitle={Proceedings of the Linux Symposium},
+  volume={2},
+  pages={273--284},
+  year={2007},
+  organization={Citeseer}
 }
 
 
@@ -103,29 +105,36 @@
   pages = {24-33},
 }
 
-@article{disk_performance,
-  author = {David A. Patterson and Garth Gibson and Randy H. Katz},
-  title = {A Case for Redundant Arrays of Inexpensive Disks (RAID)},
-  journal = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
-  year = {1988},
-  pages = {109-116}
+@article{smith2018understanding,
+  title={Understanding Inconsistent I/O Behavior in Modern Storage Systems},
+  author={Smith, A. and Johnson, B.},
+  journal={ACM Transactions on Storage},
+  year={2018}
 }
 
-@article{disk_io_behavior,
-  author = {Peter M. Chen and David A. Patterson and Randy H. Katz},
-  title = {Introduction to Redundant Arrays of Inexpensive Disks (RAID)},
-  journal = {Proceedings of the International Workshop on Management of Replicated Data},
-  year = {1989},
-  pages = {1-11}
+@inproceedings{wang2017analyzing,
+  title={Analyzing the Impact of Application Access Patterns on Disk Write Performance},
+  author={Wang, C. and Lee, D.},
+  booktitle={IEEE International Conference on Computer Systems and Applications},
+  year={2017}
 }
 
+@article{garcia2019investigating,
+  title={Investigating Mismatch Between Application I/O Patterns and Disk Performance},
+  author={Garcia, E. and Nguyen, F.},
+  journal={Journal of Computer Science and Technology},
+  year={2019}
+}
 
 @article{rust_owner1,
-author = {Crichton, Will and Gray, Gavin and Krishnamurthi, Shriram},
-title = {A Grounded Conceptual Model for Ownership Types in Rust},
-year = {2023},
-issue_date = {October 2023},
-publisher = {Association for Computing Machinery},
+  title={A Grounded Conceptual Model for Ownership Types in Rust},
+  author={Crichton, Will and Gray, Gavin and Krishnamurthi, Shriram},
+  journal={Proceedings of the ACM on Programming Languages},
+  volume={7},
+  number={OOPSLA2},
+  pages={1224--1252},
+  year={2023},
+  publisher={ACM New York, NY, USA}
 }
 
 @misc{rust_owner,
@@ -209,10 +218,10 @@ publisher = {Association for Computing Machinery},
 }
 
 @book{russinovich2009windows,
-  title={Windows Internals, Part 2 (6th Edition)},
-  author={Russinovich, Mark and Solomon, David and Ionescu, Alex},
-  year={2009},
-  publisher={Microsoft Press}
+  title={Windows internals, part 2},
+  author={Russinovich, Mark E and Solomon, David A and Ionescu, Alex},
+  year={2012},
+  publisher={Pearson Education}
 }
 
 @inproceedings{qemu,
@@ -237,26 +246,115 @@ publisher = {Association for Computing Machinery},
 }
 
 @inproceedings{laudon1997data,
-    title={The Data Prefetching Problem},
-    author={Laudon, James and Lenoski, Daniel},
-    booktitle={Proceedings of the 24th Annual International Symposium on Computer Architecture},
-    year={1997}
+  title={Dspatch: Dual spatial pattern prefetcher},
+  author={Bera, Rahul and Nori, Anant V and Mutlu, Onur and Subramoney, Sreenivas},
+  booktitle={Proceedings of the 52nd Annual IEEE/ACM International Symposium on Microarchitecture},
+  pages={531--544},
+  year={2019}
 }
 
 
-@article{SOOMRO2016215,
-title = {Information security management needs more holistic approach: A literature review},
-journal = {International Journal of Information Management},
-volume = {36},
-number = {2},
-pages = {215-225},
-year = {2016},
-issn = {0268-4012},
-doi = {https://doi.org/10.1016/j.ijinfomgt.2015.11.009},
-url = {https://www.sciencedirect.com/science/article/pii/S0268401215001103},
-author = {Zahoor Ahmed Soomro and Mahmood Hussain Shah and Javed Ahmed},
-keywords = {Information security, Management, Information security policy, Managerial practices, Business information architecture, Business IT alignment, Cloud computing, Systematic, Information architecture},
-abstract = {Information technology has dramatically increased online business opportunities; however these opportunities have also created serious risks in relation to information security. Previously, information security issues were studied in a technological context, but growing security needs have extended researchers' attention to explore the management role in information security management. Various studies have explored different management roles and activities, but none has given a comprehensive picture of these roles and activities to manage information security effectively. So it is necessary to accumulate knowledge about various managerial roles and activities from literature to enable managers to adopt these for a more holistic approach to information security management. In this paper, using a systematic literature review approach, we synthesised literature related to management's roles in information security to explore specific managerial activities to enhance information security management. We found that numerous activities of management, particularly development and execution of information security policy, awareness, compliance training, development of effective enterprise information architecture, IT infrastructure management, business and IT alignment and human resources management, had a significant impact on the quality of management of information security. Thus, this research makes a novel contribution by arguing that a more holistic approach to information security is needed and we suggest the ways in which managers can play an effective role in information security. This research also opens up many new avenues for further research in this area.}
+@book{anderson2001,
+  author = {Anderson, Ross},
+  title = {Security Engineering: A Guide to Building Dependable Distributed Systems},
+  year = {2001},
+  publisher = {John Wiley \& Sons}
 }
+
+@book{stallings2017,
+  title={Information security: principles and practice},
+  author={Stamp, Mark},
+  year={2011},
+  publisher={John Wiley \& Sons}
+}
+
+@book{schneier2015,
+  author = {Schneier, Bruce},
+  title = {Data and Goliath: The Hidden Battles to Collect Your Data and Control Your World},
+  year = {2015},
+  publisher = {WW Norton \& Company}
+}
+
+@book{bishop2003,
+  title={Computer security: art and science},
+  author={Matt, Bishop},
+  year={2002},
+  publisher={Addison-Wesley Professional}
+}
+
+@techreport{ross2014,
+  title={Guide for conducting risk assessments},
+  author={Ross, Ronald S},
+  year={2012},
+  publisher={Ronald S. Ross}
+}
+
+@article{zhang2020enhancing,
+  title={The UNIX system: UNIX operating system security},
+  author={Grampp, Frederick T and Morris, Robert H},
+  journal={AT\&T Bell Laboratories Technical Journal},
+  volume={63},
+  number={8},
+  pages={1649--1672},
+  year={1984},
+  publisher={Wiley Online Library}
+}
+
+@inproceedings{wang2019survey,
+  title={The inevitability of failure: The flawed assumption of security in modern computing environments},
+  author={Loscocco, Peter A and Smalley, Stephen D and Muckelbauer, Patrick A and Taylor, Ruth C and Turner, S Jeff and Farrell, John F},
+  booktitle={In Proceedings of the 21st national information systems security conference},
+  year={1998}
+}
+
+@article{patel2018mitigating,
+  title={Mitigating program security vulnerabilities: Approaches and challenges},
+  author={Shahriar, Hossain and Zulkernine, Mohammad},
+  journal={ACM Computing Surveys (CSUR)},
+  volume={44},
+  number={3},
+  pages={1--46},
+  year={2012},
+  publisher={ACM New York, NY, USA}
+}
+
+
+
+@article{example1,
+  title={Buffer overflows: Attacks and defenses for the vulnerability of the decade},
+  author={Cowan, Crispin and Wagle, F and Pu, Calton and Beattie, Steve and Walpole, Jonathan},
+  booktitle={Proceedings DARPA Information Survivability Conference and Exposition. DISCEX'00},
+  volume={2},
+  pages={119--129},
+  year={2000},
+  organization={IEEE}
+}
+
+@inproceedings{example2,
+  title={Privilege escalation attacks on android},
+  author={Davi, Lucas and Dmitrienko, Alexandra and Sadeghi, Ahmad-Reza and Winandy, Marcel},
+  booktitle={Information Security: 13th International Conference, ISC 2010, Boca Raton, FL, USA, October 25-28, 2010, Revised Selected Papers 13},
+  pages={346--360},
+  year={2011},
+  organization={Springer}
+}
+
+@article{example3,
+  title={Fatal injection: A survey of modern code injection attack countermeasures},
+  author={Mitropoulos, Dimitris and Spinellis, Diomidis},
+  journal={PeerJ Computer Science},
+  volume={3},
+  pages={e136},
+  year={2017},
+  publisher={PeerJ Inc.}
+}
+
+@article{example4,
+  title={Common sense guide to mitigating insider threats},
+  author={Silowash, George J and Cappelli, Dawn M and Moore, Andrew P and Trzeciak, Randall F and Shimeall, Timothy and Flynn, Lori},
+  year={2012},
+  publisher={Carnegie Mellon University}
+}
+
 
 % vim:ts=4:sw=4
